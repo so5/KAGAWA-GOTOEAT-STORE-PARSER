@@ -9,7 +9,7 @@ pip install -r  requirements.txt
 ```
 
 # How to use
-環境変数`BASE_URL`にお食事券が使える店のURLを指定して main.py を実行してください。
+環境変数`BASE_URL`にお食事券が使える店舗リストのURLを指定して main.py を実行してください。
 
 Unix環境ならだいたい次のコマンドで使えるはず
 
