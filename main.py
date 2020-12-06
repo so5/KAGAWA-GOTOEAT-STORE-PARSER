@@ -56,4 +56,5 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="get all store list from KAGAWA go to eat campaign")
     parser.add_argument("-i","--indent", dest="indent", help="indent level")
     args=parser.parse_args()
-    json.dump(read_all(),sys.stdout,ensure_ascii=False,indent=int(args.indent))
+    indent=int(args.indent) if args.indent is not None else None
+    json.dump(read_all(),sys.stdout,ensure_ascii=False,indent=indent)
